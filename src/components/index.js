@@ -11,6 +11,7 @@ import AuthorPopover from './author-popover';
 import BookFlight from './book-flight';
 import LikeDirective from './like';
 import MyPosts from './my-posts';
+import Name from './name';
 
 let requires = ['ui.bootstrap', ngFileUpload];
 let angularizeComponents = angular.module('angularizeComponents', requires);
@@ -28,6 +29,7 @@ angularizeComponents
     .component('authorPopover', AuthorPopover)
     .component('bookFlight', BookFlight)
     .component('myPosts', MyPosts)
+    .component('name', Name)
     .directive('like', LikeDirective)
     .filter('timesince', function() {       
         function transform(date) { // date as number
